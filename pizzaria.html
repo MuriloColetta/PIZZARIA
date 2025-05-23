@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzaria.css">
     <title>Pizzaria</title>
 </head>
 <body>
     <div class="container">
-        <h1>Pizzaria Shalon</h1>
-        
+    <h1>PIZZARIA SHALON</h1>
+    <div class="menu">
+        <button onclick="mostrarSecao('cadastro')">
+            <i class="fas fa-book-medical icon"></i>Cadastrar Pizza
+          </button>
+          <button onclick="mostrarSecao('cardapio')">
+            <i class="fas fa-search icon"></i>Cardápio
+          </button>
+          <button onclick="mostrarSecao('alterar')">
+            <i class="fas fa-edit icon"></i>Alterar Pizza
+          </button>
+    </div>
+
         <!--Cadastro de pizza-->
         <div id="cadastro" class="hidden">
             <h2>Cadastrar pizza</h2>
@@ -69,6 +81,7 @@
             </div>
         </div>
     </div>
+
     <script src="pizzaria.js"></script>
 </body>
 </html>
