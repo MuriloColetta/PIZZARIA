@@ -1,20 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fafafa;
+    background-color: #daba78;
     margin: 0;
     padding: 0;
 }
 
 .container {
+    background-color: #dfc198;
+    border-radius: 10px;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
 }
 
 h1 {
+    font-family: Brush Script MT;
     text-align: center;
     font-size: 36px;
-    color: #333;
+    color: #037c01;
     margin-bottom: 40px;
 }
 
@@ -37,7 +40,8 @@ h1 {
 }
 
 .menu button:hover {
-    background-color: #ff3939;
+    background-color: #d73535;
+    transform: scale(1.05);
 }
 
 .icon {
@@ -45,7 +49,7 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 #cadastro, #cardapio, #alterar {
@@ -62,7 +66,7 @@ h1 {
 
 label {
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 input {
@@ -85,11 +89,12 @@ button {
 }
 
 button:hover {
-    background-color: #ff3939;
+    background-color: #d73535;
+    transform: scale(1.01);
 }
 
 #sucessoCadastro, #erroCadastro, #sucessoAlterar, #erroAlterar {
-    color: #333;
+    color: #bf4646;
     font-size: 14px;
     margin-top: 10px;
 }
@@ -120,7 +125,7 @@ table th {
 }
 
 table tr:hover {
-    background-color: #f1f1f1;
+    background-color: #c5ab87;
 }
 
 #buscar {
