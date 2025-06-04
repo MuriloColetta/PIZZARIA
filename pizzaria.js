@@ -86,7 +86,7 @@ function buscarPizzaParaAlterar() {
         document.getElementById('novo-ingredientes').value = pizzaParaAlterar.ingredientes
         document.getElementById('novo-preco').value = pizzaParaAlterar.preco
     } else {
-        alert('Pizza não encontrada.')
+        document.getElementById('erroBuscar').innerHTML = ('Pizza não encontrada.')
         document.getElementById('form-alterar').classList.add('hidden')
     }
 }
