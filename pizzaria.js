@@ -79,6 +79,7 @@ function atualizarLista(lista = pizzaria) {
 function buscarPizzaParaAlterar() {
     const busca = document.getElementById('busca-alterar').value.toLowerCase()
     pizzaParaAlterar = pizzaria.find((pizza) => pizza.sabor.toLowerCase().includes(busca))
+    
 
     if (pizzaParaAlterar) {
         document.getElementById('form-alterar').classList.remove('hidden')
@@ -103,6 +104,7 @@ function alterarPizza() {
             pizzaParaAlterar.preco = novoPreco
 
             atualizarLista()
+            document.getElementById('busca-alterar').value = ''
             document.getElementById('sucessoAlterar').innerHTML = ('Pizza alterada com sucesso!')
             document.getElementById('erroAlterar').innerHTML = ''
             document.getElementById('form-alterar').classList.add('hidden')

@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #daba78;
+    background-color: #ecc77d;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background-color: #f7e4c3;
+    background-color: #fee0b5;
     border-radius: 10px;
     max-width: 1200px;
     margin: 20px auto;
@@ -17,7 +17,7 @@ h1 {
     font-family: Brush Script MT;
     text-align: center;
     font-size: 36px;
-    color: #037c01;
+    color: #03ad00;
     margin-bottom: 40px;
 }
 
@@ -111,6 +111,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: #ffecd1;
 }
 
 table th, table td {
@@ -125,7 +126,7 @@ table th {
 }
 
 table tr:hover {
-    background-color: #c5ab87;
+    background-color: #ffe4be;
 }
 
 #buscar {
