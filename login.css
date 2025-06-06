@@ -8,6 +8,19 @@ body {
     margin: 0;
 }
 
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    width: 160px;
+    height: auto;
+}
+
 .container {
     background-color: #fee0b5;
     padding: 20px;
