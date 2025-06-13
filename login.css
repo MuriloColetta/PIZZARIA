@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ecc77d;
+    background-image: url(fundo\ pizzaia.avif);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+.fundo-img {
+    width: 160px;
+    height: auto;
 }
 
 .logo-titulo {
@@ -95,7 +99,7 @@ button:hover {
     color: green;
 }
 
-.mensagem.Error {
+.mensagem.error {
     color: red;
 }
 

@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="container">
-        
         <div class="logo-titulo">
         <img src="logo_pizzaria-removebg-preview.png" alt="Logo da Pizzaria Shalon" class="logo-img">
         </div>
@@ -67,6 +66,8 @@
         <div id="alterar" class="hidden">
             <h2>Alterar Pizza</h2>
             <input type="text" id="busca-alterar" placeholder="Buscar por pizza" oninput="buscarPizzaParaAlterar()">
+            <p id="erroBuscar"></p>
+            <p id="sucessoAlterar"></p>
             <div id="form-alterar" class="hidden">
                 <div class="form-group">
                     <label for="novo-sabor">Novo Sabor:</label>
@@ -81,10 +82,10 @@
                     <input type="number" id="novo-preco" placeholder="Digite o novo preço">
                 </div>
                 <button onclick="alterarPizza()">Salvar Alterações</button>
-                <p id="erroBuscar"></p>
-                <p id="sucessoAlterar"></p>
-                <p id="erroAlterar"></p>
+
+            <p id="erroAlterar"></p>
             </div>
+
         </div>
 
         <div id="venda" class="hidden">
@@ -93,17 +94,19 @@
                 <label for="venda-sabor">Sabor da Pizza:</label>
                 <input type="text" id="venda-sabor" placeholder="Digite o sabor da pizza">
             </div>
-            <div>
-                <div class="form-group">
-                    <label for="venda-cliente">Nome do Cliente</label>
-                    <input type="text" id="venda-cliente" placeholder="Digite o nome do cliente">
-                </div>
-                <button onclick="registrarVenda()">registrar Venda</button>
-                <p id="sucessoVenda"></p>
-                <p id="erroVenda"></p>
-                <h3>Pizzas Vendidas</h3>
-                <ul id="lista-vendas">
+            <div class="form-group">
+                <label for="venda-quantidade">Quantidade:</label>
+                <input type="number" id="venda-quantidade" placeholder="Digite a quantidade">
             </div>
+            <div class="form-group">
+                <label for="venda-cliente">Nome do Cliente</label>
+                <input type="text" id="venda-cliente" placeholder="Digite o nome do cliente">
+            </div>
+            <button onclick="registrarVenda()">registrar Venda</button>
+            <p id="sucessoVenda"></p>
+            <p id="erroVenda"></p>
+            <h3>Pizzas Vendidas</h3>
+            <ul id="lista-vendas">
             <p id="erroRelatorio"></p>
         </div>
 
@@ -114,6 +117,7 @@
                     <tr>
                         <th>Cliente</th>
                         <th>Sabor</th>
+                        <th>Quantidade</th>
                         <th>Preço</th>
                     </tr>
                 </thead>

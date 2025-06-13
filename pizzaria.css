@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ecc77d;
+    background-image: url(fundo\ pizzaia.avif);
     margin: 0;
     padding: 0;
 }
@@ -106,17 +106,17 @@ button:hover {
     transform: scale(1.01);
 }
 
-#sucessoCadastro, #erroCadastro, #sucessoAlterar, #erroAlterar {
+#sucessoCadastro, #erroCadastro, #erroBuscar, #sucessoAlterar, #erroAlterar , #sucessoVenda, #erroVenda, #erroRelatorio {
     color: #bf4646;
     font-size: 14px;
     margin-top: 10px;
 }
 
-#sucessoCadastro, #sucessoAlterar {
+#sucessoCadastro, #sucessoAlterar, #sucessoVenda {
     color: green;
 }
 
-#erroCadastro, #erroAlterar {
+#erroCadastro,#erroBuscar, #erroAlterar, #erroVenda, #erroRelatorio {
     color: red;
 }
 
